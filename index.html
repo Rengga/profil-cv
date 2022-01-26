@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="container-navbar">
+    <div class="container-navbar" id="navbar">
       <div class="navbar">
-        <button><ion-icon name="arrow-down-outline"></ion-icon></button>
+        <button onclick="toggleMenu()"><i class="fas fa-angle-down" onclick="buttonUpDown(this)"></i></button>
         <nav>
           <ul>
             <li>
@@ -48,9 +56,9 @@
             <div class="wlpr"></div>
             <div class="foto"></div>
             <div class="box">
-              <h1>Rengga</h1>
-              <button>Data diri</button>
-              <table>
+              <h1 id="rengga">Rengga</h1>
+              <button onclick="dataDiri()">Data diri</button>
+              <table id="tabel">
                 <tr>
                   <td>Nama</td>
                   <td>: Silvando Rengga Arnanta</td>
@@ -72,7 +80,7 @@
                   <td>: Sarjana S1</td>
                 </tr>
               </table>
-              <div class="sosmed">
+              <div class="sosmed" id="sosmed">
                 <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
                 <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
                 <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
@@ -135,4 +143,42 @@
       </div>
     </div>
   </body>
+  <script>
+    var navBar = document.getElementById("navbar");
+    var tabel = document.getElementById("tabel");
+    var rengga = document.getElementById("rengga");
+    var sosmed = document.getElementById("sosmed");
+
+    navBar.style.maxHeight = "600px";
+    function toggleMenu() {
+      if (navBar.style.maxHeight == "600px") {
+        navBar.style.maxHeight = "0px";
+      } else {
+        navBar.style.maxHeight = "600px";
+      }
+    }
+    function buttonUpDown(x) {
+      x.classList.toggle("fa-angle-up");
+    }
+
+    function dataDiri() {
+      if (tabel.style.display === "none") {
+        tabel.style.display = "block";
+      } else {
+        tabel.style.display = "none";
+      }
+
+      if (rengga.style.display === "block") {
+        rengga.style.display = "none";
+      } else {
+        rengga.style.display = "block";
+      }
+
+      if (sosmed.style.marginTop === "100px") {
+        sosmed.style.marginTop = "0px";
+      } else {
+        sosmed.style.marginTop = "100px";
+      }
+    }
+  </script>
 </html>
