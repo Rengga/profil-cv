@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>CV Rengga</title>
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-2.css" />
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -24,16 +27,28 @@
         <nav>
           <ul>
             <li>
-              <a href=""><ion-icon name="person-outline"></ion-icon> Profil</a>
+              <a href=""
+                ><ion-icon name="person-outline"></ion-icon>
+                <p>Profil</p>
+              </a>
             </li>
             <li>
-              <a href=""><ion-icon name="school-outline"></ion-icon> Pendidikan</a>
+              <a href=""
+                ><ion-icon name="school-outline"></ion-icon>
+                <p>Pendidikan</p></a
+              >
             </li>
             <li>
-              <a href=""><ion-icon name="ribbon-outline"></ion-icon> Skill</a>
+              <a href=""
+                ><ion-icon name="ribbon-outline"></ion-icon>
+                <p>Skill</p></a
+              >
             </li>
             <li>
-              <a href=""><ion-icon name="mail-outline"></ion-icon> Kontak</a>
+              <a href=""
+                ><ion-icon name="mail-outline"></ion-icon>
+                <p>Kontak</p></a
+              >
             </li>
           </ul>
         </nav>
@@ -60,24 +75,24 @@
               <button onclick="dataDiri()">Data diri</button>
               <table id="tabel">
                 <tr>
-                  <td>Nama</td>
-                  <td>: Silvando Rengga Arnanta</td>
+                  <td>Nama :</td>
+                  <td>Silvando Rengga Arnanta</td>
                 </tr>
                 <tr>
-                  <td>Tempat & tanggal lahir</td>
-                  <td>: Tulungagung, 12 Maret 1999</td>
+                  <td>Tempat & tanggal lahir :</td>
+                  <td>Tulungagung, 12 Maret 1999</td>
                 </tr>
                 <tr>
-                  <td>Alamat</td>
-                  <td>: Jawa Timur, Sidoarjo, Sukodono, Kebonagung, Perumahan Kebonagung 1</td>
+                  <td>Alamat :</td>
+                  <td>Jawa Timur, Sidoarjo, Sukodono, Kebonagung, Perumahan Kebonagung 1</td>
                 </tr>
                 <tr>
-                  <td>Status</td>
-                  <td>: Belum menikah</td>
+                  <td>Status :</td>
+                  <td>Belum menikah</td>
                 </tr>
                 <tr>
-                  <td>Pendidikan Terakhir</td>
-                  <td>: Sarjana S1</td>
+                  <td>Pendidikan Terakhir :</td>
+                  <td>Sarjana S1</td>
                 </tr>
               </table>
               <div class="sosmed" id="sosmed">
@@ -149,12 +164,12 @@
     var rengga = document.getElementById("rengga");
     var sosmed = document.getElementById("sosmed");
 
-    navBar.style.maxHeight = "600px";
+    navBar.style.maxHeight = "100%";
     function toggleMenu() {
-      if (navBar.style.maxHeight == "600px") {
+      if (navBar.style.maxHeight == "100%") {
         navBar.style.maxHeight = "0px";
       } else {
-        navBar.style.maxHeight = "600px";
+        navBar.style.maxHeight = "100%";
       }
     }
     function buttonUpDown(x) {

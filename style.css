@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -125,7 +134,7 @@ ul li a:hover {
   width: 200px;
   height: 200px;
   left: 420px;
-  top: 400px;
+  top: 390px;
   background: #787a91;
   position: absolute;
   z-index: -1;
@@ -185,7 +194,7 @@ ul li a:hover {
 .bg .box {
   height: 470px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   margin-top: 170px;
@@ -195,7 +204,7 @@ ul li a:hover {
   color: white;
 }
 .bg .box button {
-  margin-top: 10px;
+  margin-top: 20px;
   cursor: pointer;
   padding: 5px 10px;
   font-size: 20pt;
@@ -216,7 +225,8 @@ table {
 .bg .box table,
 td {
   color: white;
-  padding: 15px 5px;
+  padding: 20px 5px;
+  transition: 1s;
 }
 td {
   border-bottom: 1px solid white;
@@ -264,6 +274,9 @@ td {
 .container-pendidikan .row .col h1 {
   font-size: 60pt;
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-pendidikan .dots {
@@ -303,7 +316,7 @@ td {
   justify-content: center;
   background: #41444b;
   color: white;
-  width: 320px;
+  width: 305px;
   height: 80px;
   font-size: 20pt;
   border-radius: 15px;
