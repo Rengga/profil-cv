@@ -145,6 +145,57 @@
     margin-top: 50px;
   }
 }
+@media screen and (max-width: 912px) {
+  .container-profil {
+    height: auto;
+  }
+  .container-profil .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .container-profil .row .col-2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-profil .row .col-3 {
+    width: 100%;
+    height: auto;
+  }
+  .container-profil .row .col-3 .bg .foto {
+    width: 260px;
+    height: 260px;
+    top: 170px;
+    border: 10px #41444b solid;
+  }
+
+  .bg .box table {
+    margin-left: 50px;
+  }
+  .bg .box table,
+  td {
+    padding: 5px 10px;
+    font-size: 12pt;
+  }
+  /* ====================================== */
+  .container-pendidikan {
+    height: auto;
+  }
+  /* ========================================== */
+  .container-skill {
+    height: auto;
+  }
+  .logo-skill .logoimg {
+    width: 120px;
+    padding: 10px 5px;
+    margin: 0 5px;
+    font-size: 12pt;
+  }
+  .box-ano-skill span {
+    margin: 10px 10px;
+  }
+}
 
 @media screen and (max-width: 820px) {
   .container-profil {
@@ -195,5 +246,94 @@
   }
   .box-ano-skill span {
     margin: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container-navbar {
+    width: 100%;
+    bottom: 0;
+    top: auto;
+    padding: 0px;
+    height: 50px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  .container-profil .row .col-2 {
+    padding: 4px 20px;
+  }
+  .container-profil .row .col-3 .bg .foto {
+    width: 170px;
+    height: 170px;
+    top: 220px;
+    border: 8px #41444b solid;
+  }
+  .bg .box button {
+    margin-top: 10px;
+  }
+  .bg .box table {
+    margin-left: 0px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li {
+    margin-bottom: auto;
+    margin: 0px 5px;
+  }
+
+  .container-pendidikan .row .col h1,
+  .container-skill .row .col h1 {
+    font-size: 30pt;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .container-navbar {
+    padding: 0px;
+  }
+  .bg .box table {
+    margin-bottom: 10px;
+  }
+  .bg .box table,
+  td {
+    padding: 4px 4px;
+    font-size: 10pt;
+  }
+  .bg .box {
+    height: auto;
+  }
+  .bg .box .sosmed {
+    margin: 20px 0;
+  }
+
+  .sosmed a {
+    margin: 0px 15px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .container-navbar {
+    padding: 0px;
+    width: 100%;
+  }
+  ul li a {
+    gap: 2px;
+  }
+  .container-profil .row .col-2 span {
+    font-size: 25pt;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .bg .box {
+    width: 100%;
+  }
+  .bg .box table,
+  td {
+    padding: 0px 0px;
+    font-size: 10px;
   }
 }
